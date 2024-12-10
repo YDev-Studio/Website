@@ -1,3 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Asteroid;
+    src: url(./assets/Asteroid.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Asteroid;
+    font-size: 75px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: Oswald;
+    background-color: #181717;
+    color: red !important;
+}
+
+.gradient {
+    background: linear-gradient(180deg, #eb2f00, #920000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
