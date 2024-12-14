@@ -23,8 +23,6 @@ h1 {
 
 html,
 body {
-    height: 100%;
-    width: 100%;
     font-family: Oswald;
     background-color: #181717;
     color: red !important;
@@ -36,16 +34,4 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-}
+@media (max-width: 768px) {}
